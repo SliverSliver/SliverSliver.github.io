@@ -1,4 +1,6 @@
 
+  
+
 <!DOCTYPE html>
 <html  style="display: none;">
 
@@ -31,9 +33,7 @@
 
   
     <meta name="theme-color" content="
-  
-  #3F51B5
-  
+#212121
 
 ">
   
@@ -42,7 +42,7 @@
   
       <meta name="description" content="前言最近租了个服务器，用的是ubuntu17.10版本系统，所以搜集了一部分常用的指令，方便以后查阅。">
   
-  <meta name="keywords" content="blog, hexo, mdui">
+  <meta name="keywords" content="blog, ���ѧϰ, ����ѧϰ, machine learning, deep learning">
 
   <!--iOS -->
   <meta name="apple-mobile-web-app-title" content="Hexo">
@@ -81,7 +81,7 @@
   
   
     
-      <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style-now.min.css?jWvP4JOL/SRWUhX6WmEQmg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+      <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style-plus.min.css?7M6AHt3uK/iOtUnzPE5kRw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
   
 
@@ -103,12 +103,16 @@
 
   
     
-  <body class="mdui-theme-primary-indigo mdui-theme-accent-blue
-   
   
-    mdui-appbar-with-toolbar
+    <body class="mdui-appbar-with-toolbar mdui-theme-primary-red mdui-theme-accent-blue
+    
+      mdui-theme-layout-dark
+    
+    
+      mdui-drawer-body-left
+    
+     drawer-overlay-none" >
   
-  " >
 
 
   
@@ -119,111 +123,121 @@
 
   
 
-  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" id="blog-appbar">
+  <div class="mdui-appbar mdui-appbar-fixed animate-appbar" id="blog-appbar">
     <div class="mdui-toolbar mdui-color-theme">
-      <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-        <i class="mdui-icon">
-          <span></span>
-        </i>
+      <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
+        <i class="mdui-icon material-icons">&#xe5d2;</i>
       </button>
       
         <a href="/" class="mdui-typo-headline">
-          Title
+          Sliver
         </a>
       
       
-      
-        <div class="flex-spacer"></div>
-      
+      <div class="mdui-toolbar-spacer"></div>
       
       
+  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu-index-more'}" id="index-more">
+    <i class="mdui-icon material-icons">&#xe417;</i>
+  </button>
 
-    </div>
-  </div>
+  <ul class="mdui-menu" id="menu-index-more">
+    
+    
+      <li class="mdui-menu-item">
+        <a class="mdui-ripple menu-badge">
+          Views: 
+          <span class="badge" id="busuanzi_value_page_pv"></span>
+        </a>
+      </li>
+    
+  </ul>
 
 
-  <div id="search-cover" searchResult onclick="closeSearch()"></div>
-
-
-
-
-
-
-  
-  <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
-  " id="drawer" style="z-index: 2001;">
-  <div class="userview" style="background-image: url(/img/bg.png)">
-  <div class="overlay">
-    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-    <div class="bottom">
-      <div class="info">
-        <div class="author mdui-text-color-white-text">
-          John Doe
-        </div>
-        <div class="slogan mdui-text-color-white-secondary">
-          I&#39;m your slogan!
-        </div>
+      <div class="appbar-userview mdui-valign" mdui-menu="{target: '#menu-userview', covered: false}">
+        <img class="mdui-img-circle appbar-userview-avatar mdui-center" src="/img/avatar.png"/>
       </div>
+      <div class="mdui-menu no-padding mdui-hidden-xs" id="menu-userview">
+  <div class="menu-userview-container">
+    <img class="mdui-img-circle menu-userview-avatar" src="/img/avatar.png"/>
+    <div class="menu-userview-content">
+      <div class="mdui-typo-body-1">John Doe</div>
+      <div class="mdui-typo-caption">��һ����Ƥ����������</div>
       <div class="flex-spacer"></div>
       
     </div>
   </div>
 </div>
 
-  <div class="content">
-  <div class="hexo">
-    
-      <div class="mdui-list no-padding-bottom">
-        <a href="/">
-          <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
-            <div class="mdui-list-item-content">
-              Index
-            </div>
-          </li>
-        </a>
-      </div>
-    
-    
-      <div class="mdui-list no-padding">
-        <a href="/archives">
-          <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
-            <div class="mdui-list-item-content">
-              Archives
-              <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
-            </div>
-          </li>
-        </a>
-      </div>
-    
-    
-      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
-        
-        
-        <div class="mdui-collapse-item ">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-            <div class="mdui-list-item-content">Years</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            
-            
-              <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
-                2018
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
+    </div>
   </div>
+
+
+
+
+
+
   
+  <div class="mdui-drawer drawer-container
+  " id="drawer" style="z-index: 2001;">
+  <div class="drawer-head mdui-valign mdui-hidden-md-up">
+  <div class="mdui-typo-title-opacity">Sliver</div>
+  <div class="flex-spacer"></div>
+  <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer-close><i class="mdui-icon material-icons">&#xe314;</i></button>
 </div>
 
-  <div class="flex-spacer"></div>
-  <div class="drawer-footer">
+  <div class="mdui-divider"></div>
+  <div class="drawer-content">
+    
+  <div class="mdui-list no-padding-bottom">
+    <a href="/">
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
+        <div class="mdui-list-item-content">
+          Index
+        </div>
+      </li>
+    </a>
+  </div>
+
+
+  <div class="mdui-list no-padding">
+    <a href="/archives">
+      <li class="mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+        <div class="mdui-list-item-content">
+          Archives
+          <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+        </div>
+      </li>
+    </a>
+  </div>
+
+
+  <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
+    
+    
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+        <div class="mdui-list-item-content">Years</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        
+        
+          <a href="/archives/2018/" class="mdui-list-item mdui-ripple">
+            2018
+          </a>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="flex-grow: 1;"></div>
+    <div class="drawer-footer">
   <div class="mdui-typo mdui-typo-caption-opacity">
     Powered by <a href="http://hexo.io">Hexo</a>
     <br />
@@ -252,6 +266,7 @@
   
 </script>
 
+  </div>
 </div>
 
 
@@ -264,10 +279,14 @@
   
 
 
-  <style id="post_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("post_css","/css/src/now/post.min.css?EKoTbS50/qRdsnGpvz/clA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+  <style id="post_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("post_css","/css/src/plus/post.min.css?2hJW1eZGVb7WSAHhM2qWOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 <style id="lightgallery_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("lightgallery_css","/css/src/lightgallery.min.css?+c5+nzUi2JvkvxweHDf/nA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
+  <style id="prism_theme_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prism_theme_css","/css/src/prism-themes/dark.min.css?0qUPxIYO7HRq6/jdmib3dQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+  <style id="line_number_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("line_number_css","/css/src/prism-themes/line-number.min.css?3vej9ouE8RJMGe/3SzS8aw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 <style>
   .lg-outer .lg-item {
@@ -277,16 +296,8 @@
 <div class="post-warpper animate-post">
   <div class="post-bg-color
     
-      
-        mdui-color-theme
-      
-    
   "></div>
   <div class="post-header
-    
-      
-        mdui-color-theme
-      
     
   ">
     <div class="post-header-container">
@@ -318,7 +329,7 @@
         
         
           <div class="mdui-card-media">
-            <img src="/img/random/picHD_4.png"/>
+            <img src="/img/random/picHD_11.png"/>
           </div>
         
         <div class="post-content mdui-typo no-margin" id="post-content">
@@ -584,12 +595,38 @@ aux 以BSD语法列出
         
         
           
+            <div class="posts-line">
+              <div class="mdui-divider"></div>
+            </div>
+            <div class="post-comment">
+              
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://yoursite.com/2018/01/02/Ubuntu下常用指令/';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 'http://yoursite.com/2018/01/02/Ubuntu下常用指令/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//Sliver.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+            </div>
+          
         
       </div>
       
         <div id="card-toc" class="
         
-          mdui-color-theme
+          mdui-color-grey-900
         
         ">
           <ul class="mdui-list post-toc"><a class="mdui-list-item mdui-ripple post-toc-link" href="#前言"><span class="post-toc-number">1.<span class="post-toc-text">前言</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#基本命令"><span class="post-toc-number">2.<span class="post-toc-text">基本命令</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#常用命令"><span class="post-toc-number">2.1.<span class="post-toc-text">常用命令</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#帮助"><span class="post-toc-number">2.1.1.<span class="post-toc-text">帮助</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#ls-命令（显示当前目录文件）"><span class="post-toc-number">2.1.2.<span class="post-toc-text">ls 命令（显示当前目录文件）</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#cd-进入其他目录"><span class="post-toc-number">2.1.3.<span class="post-toc-text">cd 进入其他目录</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#tab键-命令补全"><span class="post-toc-number">2.1.4.<span class="post-toc-text">tab键 命令补全</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#alias-别名"><span class="post-toc-number">2.1.5.<span class="post-toc-text">alias 别名</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#apt-get-下载"><span class="post-toc-number">2.1.6.<span class="post-toc-text">apt-get 下载</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#more、less-分页显示文本文件内容"><span class="post-toc-number">2.1.7.<span class="post-toc-text">more、less 分页显示文本文件内容</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#head、tail-显示文件头、尾内容"><span class="post-toc-number">2.1.8.<span class="post-toc-text">head、tail 显示文件头、尾内容</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#管道符-连接多个命令"><span class="post-toc-number">2.1.9.<span class="post-toc-text">| 管道符 连接多个命令</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#grep-字符串-在文本文件中查找某个字符串"><span class="post-toc-number">2.1.10.<span class="post-toc-text">grep 字符串 在文本文件中查找某个字符串</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#sudo-管理员权限"><span class="post-toc-number">2.1.11.<span class="post-toc-text">sudo 管理员权限</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#文件操作"><span class="post-toc-number">2.2.<span class="post-toc-text">文件操作</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#find-起始目录-name-查找的文件或目录"><span class="post-toc-number">2.2.1.<span class="post-toc-text">find 起始目录 -name 查找的文件或目录</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#mkdir-目录名-创建一个目录"><span class="post-toc-number">2.2.2.<span class="post-toc-text">mkdir 目录名 创建一个目录</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#touch-文件名-创建一个或多个文件"><span class="post-toc-number">2.2.3.<span class="post-toc-text">touch 文件名 .. 创建一个或多个文件</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#rmdir-空目录名-删除一个空目录"><span class="post-toc-number">2.2.4.<span class="post-toc-text">rmdir 空目录名 删除一个空目录</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#rm-文件名-删除一个或多个文件"><span class="post-toc-number">2.2.5.<span class="post-toc-text">rm 文件名 .. 删除一个或多个文件</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#注意：慎用"><span class="post-toc-number">2.3.<span class="post-toc-text">注意：慎用</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#mv-源文件或目录-目标文件或目录"><span class="post-toc-number">2.3.1.<span class="post-toc-text">mv 源文件或目录 目标文件或目录</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数"><span class="post-toc-number">2.4.<span class="post-toc-text">最常用参数:</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#cat-文件名"><span class="post-toc-number">2.4.1.<span class="post-toc-text">cat 文件名 ..</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#find-路经-name"><span class="post-toc-number">2.4.2.<span class="post-toc-text">find 路经 -name</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数-1"><span class="post-toc-number">2.5.<span class="post-toc-text">最常用参数:</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#cp-文件名或目录名-拷贝文件或目录"><span class="post-toc-number">2.5.1.<span class="post-toc-text">cp 文件名或目录名 拷贝文件或目录</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数："><span class="post-toc-number">2.6.<span class="post-toc-text">最常用参数：</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#ln-源文件或目录-目标文件或目录-为文件建立连接"><span class="post-toc-number">2.6.1.<span class="post-toc-text">ln 源文件或目录 目标文件或目录 为文件建立连接</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#注意："><span class="post-toc-number">2.7.<span class="post-toc-text">注意：</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数-2"><span class="post-toc-number">2.8.<span class="post-toc-text">最常用参数:</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#tar-打包与解包"><span class="post-toc-number">2.8.1.<span class="post-toc-text">tar 打包与解包</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数-3"><span class="post-toc-number">2.9.<span class="post-toc-text">最常用参数:</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#打包时常追加的参数"><span class="post-toc-number">2.9.1.<span class="post-toc-text">打包时常追加的参数:</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#用户管理"><span class="post-toc-number">2.10.<span class="post-toc-text">用户管理</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数：-1"><span class="post-toc-number">2.11.<span class="post-toc-text">最常用参数：</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#权限管理"><span class="post-toc-number">2.12.<span class="post-toc-text">权限管理</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#更改权限"><span class="post-toc-number">2.12.1.<span class="post-toc-text">更改权限</span></span></a></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#系统管理"><span class="post-toc-number">2.13.<span class="post-toc-text">系统管理</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#最常用参数-ps多用参数集合-而不是单个参数-并且配合grep使用"><span class="post-toc-number">2.14.<span class="post-toc-text">最常用参数(ps多用参数集合,而不是单个参数,并且配合grep使用):</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#常用参数"><span class="post-toc-number">2.14.1.<span class="post-toc-text">常用参数</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#注意：-1"><span class="post-toc-number">2.14.2.<span class="post-toc-text">注意：</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#常用参数："><span class="post-toc-number">2.14.3.<span class="post-toc-text">常用参数：</span></span></a></a></ul></a></ul></a></ul>
@@ -644,49 +681,17 @@ aux 以BSD语法列出
 
 
   
-    <script type="text/ls-javascript" id="global-script">
-  /* appbar button */
+    <script type="text/ls-javascript" id="back-button-script">
+  /* back button */
   (function() {
-    var drawer = document.querySelector('#drawer')
-    var drawerBtn = document.querySelector('.drawer-button')
-
-    drawer.addEventListener('open.mdui.drawer', function (e) {
-      drawerBtn.classList.add('back')
-    })
-    drawer.addEventListener('close.mdui.drawer', function (e) {
-      drawerBtn.classList.remove('back')
-    })
-  })();
-
-  
-</script>
-
-
-  <script type="text/ls-javascript" id="appbar-script">
-  /* post appbar */
-  (function() {
-    var pageFlag = false;
-    var appbar = new mdui.Headroom('#blog-appbar');
-    appbar.disable();
-    var toolbar = document.querySelector('#blog-appbar .mdui-toolbar')
-
-    window.addEventListener('scroll', function() {
-      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      var divTop = document.querySelector('div#top').offsetTop
-
-      var pageLocation = divTop - bodyTop;
-      if (!pageFlag && pageLocation < 0) {
-        toolbar.classList.add('mdui-shadow-2')
-        appbar.enable();
-        pageFlag = true;
-      } else if (pageFlag && pageLocation >= 0) {
-        toolbar.classList.remove('mdui-shadow-2')
-        appbar.disable();
-        pageFlag = false;
-      }
+    var backBtn = document.querySelector('button[back]')
+    if (backBtn !== null)
+    backBtn.addEventListener('click', function() {
+        window.history.back();
     })
   })();
 </script>
+
 
   <script type="text/ls-javascript" id="toc-active-script">
   if (document.querySelector('ul#menu-toc > ol') !== null && document.querySelector('div#card-toc > ul') !== null) {
@@ -799,8 +804,6 @@ aux 以BSD语法列出
 
 
 
-
-
   
 
 
@@ -812,6 +815,8 @@ aux 以BSD语法列出
 
 
 
+
+  <script type="text/javascript" src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 <!-- remove diplay:none -->
